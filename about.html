@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About · Your Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fff;
+            color: #000;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .name {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .name a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #000;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.5;
+        }
+
+        .nav-links a.active {
+            opacity: 0.5;
+        }
+
+        /* About Section */
+        .about {
+            padding: 150px 50px 100px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 60px;
+            letter-spacing: -0.5px;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 50px;
+            text-align: center;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px 25px;
+            }
+
+            .nav-links {
+                gap: 25px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about {
+                padding: 120px 25px 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="name"><a href="index.html">Your Name</a></div>
+        <ul class="nav-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about">
+        <h1 class="section-title">About</h1>
+        <p>I'm a Product Manager who loves creating—both digital products and handmade crafts.</p>
+        <p>By day, I lead product strategy and ship features that help people. I work cross-functionally with engineering, design, and business teams to build products that solve real problems.</p>
+        <p>By night, I'm at my craft table—sewing textiles, throwing pottery, knitting blankets, and painting. My work is deeply influenced by my Indian heritage, which brings vibrant colors and intricate patterns into everything I create.</p>
+        <p>I believe the best products are built with both analytical thinking and creative intuition. Whether I'm conducting user research or designing a pattern for embroidery, I'm driven by the same thing: making something meaningful.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Your Name</p>
+    </footer>
+</body>
+</html>
